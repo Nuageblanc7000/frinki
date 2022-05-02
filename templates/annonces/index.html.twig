@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AnnoncesController!
+{% endblock %}
+
+{% block body %}
+	<div class="container pt-5">
+		<div class="row">
+			<div class="col-md-9 grid-auto">
+				{% include "partials/_cards.html.twig" %}
+			</div>
+			<div class="col-md-3 bg-orange">
+				<h2 class="text-center t-c-w">Filtrer</h2>
+				<div class="filter">
+					<form action="">
+						<div class="content-input">
+							<i class='bx bx-search-alt'></i>
+							<input type="text" placeholder="rechercher...">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>{% endblock %}

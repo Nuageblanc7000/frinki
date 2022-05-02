@@ -1,0 +1,14 @@
+App\Entity\Category:
+  category{1..10}:
+    name: <promotionCode()>
+
+App\Entity\Annonces:
+    annonces{1..20}:
+      title: <productName()>
+      price: <numberBetween(5,500)>
+      description: <text()>
+      createAt: <createDateImmutable()>
+      coverImage: "https://picsum.photos/<numberBetween(5,200)>/500"
+      categories: '@category*'
+
+

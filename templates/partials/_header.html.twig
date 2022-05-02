@@ -1,0 +1,49 @@
+<header>
+	<nav class="container d-flex justify-content-between align-items-center">
+		<div class="header">
+
+			<a href="{{path('home')}}">
+				<h1 class="t-c-w">Frinki</h1>
+			</a>
+		</div>
+		<div class="row">
+
+			<ul class="d-flex justify-content-around">
+
+				{% if is_granted('AUTHENTICATED_FULLY') %}
+
+					<li>
+						<a class="btn-cube-black" href="#">
+							<i class='bx bx-log-out-circle'></i>
+						</a>
+					</li>
+                    <li>
+						<a class="badge-user" href="#">
+							<img src="{{ asset('images/test.jpg') }}" alt="">
+						</a>
+					</li>
+				{% else %}
+					<li>
+					<a class="btn-cube-black" href="#">
+						<i class='bx bx-search-alt'></i>
+					</a>
+
+				</li>
+				<li>
+					<a class="btn-cube-black" href="#">
+						<i class='bx bxs-edit'></i>
+					</a>
+				</li>
+
+                    <li>
+						<a class="btn-cube-black" href="#">
+							<i class='bx bx-user'></i>
+						</a>
+					</li>
+
+				{% endif %}
+
+			</div>
+		</ul>
+	</div>
+</header>

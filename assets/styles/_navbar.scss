@@ -1,0 +1,11 @@
+header
+{
+    background-color: $blue-mat;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
